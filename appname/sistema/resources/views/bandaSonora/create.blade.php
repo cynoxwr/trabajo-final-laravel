@@ -1,0 +1,15 @@
+@extends('layouts.app')
+@section('content')
+<div class="container">
+
+<form action="{{ url ('/bandaSonora') }}" method="post" enctype="multipart/form-data"> 
+@csrf
+@include('bandaSonora.form',['modo'=>'Crear']);
+
+
+
+
+
+</form>
+</div>
+@endsection
